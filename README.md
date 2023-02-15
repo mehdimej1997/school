@@ -12,4 +12,6 @@ best practices
 
 To get started with the project and run it in dev mode  
 **1**. Open the project in a terminal or any Text Editor  
-**2**. Execute the command _ ./script.cmd _
+**2**. Execute the command \_ ./script.cmd
+
+**warning**: before execute the script change the path of project inside _script.cmd_
