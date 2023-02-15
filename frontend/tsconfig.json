@@ -21,7 +21,8 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@ui/*": ["./stories/*"]
+      "@ui/*": ["./stories/*"],
+      "@component/*": ["./components/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

@@ -1,4 +1,6 @@
-import "../styles/tailwind.css";
+import { Nav } from "@component/Nav";
+import "../../styles/tailwind.css";
+import "../globals.css";
 
 export default function RootLayout({
   children,
@@ -12,7 +14,11 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>{children}</body>
+
+      <body>
+        <Nav />
+        <div>{children}</div>
+      </body>
     </html>
   );
 }

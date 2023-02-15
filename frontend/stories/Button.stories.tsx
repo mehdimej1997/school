@@ -10,7 +10,9 @@ export default {
   argTypes: {
     intent: {
       defaultValue: "primary",
-      name: "color",
+    },
+    fullWidth: {
+      defaultValue: false,
     },
   },
 } as ComponentMeta<typeof Button>;

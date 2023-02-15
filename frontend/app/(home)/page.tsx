@@ -3,7 +3,7 @@ import { Button } from "@ui/Button";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default async function Home() {
+export default function Home() {
   return (
     <main>
       <Button intent={"primary"}></Button>
