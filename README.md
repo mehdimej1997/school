@@ -4,9 +4,9 @@ I created this project only for learning purpose from **[udemy](https://www.udem
 Originally the **frontend** was created using **thymeleaf**, but i wanted to challenge my self and try to learn [NextJS 13](https://beta.nextjs.org/docs) by following
 best practices
 
-> TypeScript
-> Class variant authority
-> StoryBook
+> TypeScript  
+> Class variant authority  
+> StoryBook  
 
 # Getting Started
 
