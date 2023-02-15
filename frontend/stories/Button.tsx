@@ -1,32 +1,42 @@
-import { cva, VariantProps } from "class-variance-authority";
-import { LinkProps } from "next/link";
-import React, { HTMLProps } from "react";
+import { cva } from "class-variance-authority";
+import React from "react";
+import { IButtonProps } from "types/Button.type";
 
-const buttonStyles = cva(
-  "flex items-center justify-center  px-8 py-2 rounded-full font-semibold text-white transition-all duration-200 ease-out hover:-translate-y-[2px] hover:shadow-md active:shadow-none active:-translate-y-[0px]",
+export const buttonStyles = cva(
+  "flex items-center justify-center px-8 py-2 rounded-full font-semibold transition-all duration-200 ease-out ",
   {
     variants: {
       intent: {
-        primary: ["bg-[#f4a261]", "hover:bg-[#e76f51]"],
-        secondary: ["bg-green-500", "hover:bg-[#e76f51]"],
+        warning: ["bg-[#f4a261]", "text-white", "hover:bg-[#e76f51]"],
+        white: [
+          "bg-white",
+          "text-black",
+          "hover:text-white",
+          "hover:bg-[#e76f51]",
+        ],
       },
       fullWidth: {
         true: "w-full",
         false: "w-fit",
       },
+      float: {
+        true: [
+          "hover:shadow-md",
+          "active:shadow-none",
+          "hover:-translate-y-[2px]",
+          "active:-translate-y-[0px]",
+        ],
+        false: "",
+      },
     },
   }
 );
 
-export interface IButtonProps
-  extends VariantProps<typeof buttonStyles>,
-    HTMLProps<HTMLDivElement & LinkProps> {
-  fullWidth?: boolean;
-}
-
 export const Button = ({
-  intent = "primary",
+  intent = "warning",
   fullWidth = false,
+  float = true,
+  text = "Button",
   href,
   ...props
 }: IButtonProps) => {
@@ -34,9 +44,9 @@ export const Button = ({
     <div
       role="button"
       {...props}
-      className={`${buttonStyles({ intent, fullWidth })}`}
+      className={`${buttonStyles({ intent, fullWidth, float })}`}
     >
-      <p>{props.children || "Button"}</p>
+      <p>{props.children || text}</p>
     </div>
   );
 };

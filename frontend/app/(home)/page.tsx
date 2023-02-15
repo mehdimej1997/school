@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main>
-      <Button intent={"primary"}></Button>
+      <Button intent={"warning"}></Button>
     </main>
   );
 }
