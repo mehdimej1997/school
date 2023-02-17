@@ -3,7 +3,7 @@ import React from "react";
 import { IButtonProps } from "types/Button.type";
 
 export const buttonStyles = cva(
-  "flex items-center justify-center px-8 py-2 rounded-full font-semibold transition-all duration-200 ease-out ",
+  "flex items-center justify-center px-8 py-4 rounded-full font-semibold transition-all duration-200 ease-out ",
   {
     variants: {
       intent: {
