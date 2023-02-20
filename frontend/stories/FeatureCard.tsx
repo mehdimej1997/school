@@ -4,7 +4,7 @@ import { FaUserAlt } from "react-icons/fa";
 import { IFeatureCard } from "types/FeatureCard.type";
 
 export const featureCardStyle = cva(
-  "flex justify-center items-center flex-col gap-4 shadow-md max-w-[300px] p-8 rounded-sm transition-all ease-in duration-200 outline outline-white",
+  "flex justify-center items-center flex-col gap-4 shadow-lg max-w-[280px] p-8 rounded-sm transition-all duration-300 outline outline-white",
   {
     variants: {
       outline: {
@@ -42,7 +42,7 @@ export function FeatureCard({
       <div className="relative">
         <div
           style={{ backgroundColor: accentColor, opacity: 0.1 }}
-          className="rounded-full h-12 w-12"
+          className="rounded-full h-20 w-20"
         />
         <div
           style={{ color: accentColor }}
@@ -51,8 +51,8 @@ export function FeatureCard({
           {icon}
         </div>
       </div>
-      <h3 className="font-bold text-lg">{title}</h3>
-      <p>{description}</p>
+      <h3 className="font-bold text-2xl">{title}</h3>
+      <p className="text-center">{description}</p>
     </div>
   );
 }
