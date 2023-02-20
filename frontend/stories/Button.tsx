@@ -46,7 +46,7 @@ export const Button = ({
       {...props}
       className={`${buttonStyles({ intent, fullWidth, float })}`}
     >
-      <p>{props.children || text}</p>
+      {props.children || text}
     </div>
   );
 };

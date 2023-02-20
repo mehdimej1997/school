@@ -22,7 +22,7 @@ export default function Hero({}: Props) {
 
       <div className="relative aspect-[2/3] w-[300px] md:w-[400px]">
         <div className="absolute  top-16 -left-[10%] rounded-message bg-cyan-600 p-4">
-          <p className="font-semibold text-white">Back to School</p>
+          <p className="font-semibold text-2xl text-white">Back to School</p>
           <div className="relative">
             <div className="border-triangle"></div>
           </div>
