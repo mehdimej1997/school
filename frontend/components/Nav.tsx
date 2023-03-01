@@ -6,16 +6,18 @@ type Props = {};
 
 export const Nav = (props: Props) => {
   return (
-    <nav className="flex justify-between items-center container mx-auto h-20 font-semibold">
-      <div>
-        <h1>Logo</h1>
-      </div>
-      <div>
-        <ul className="flex gap-8">
-          <Link href="/">Home</Link>
-          <Link href="/">Courses</Link>
-          <Link href="/">Contact</Link>
-        </ul>
+    <nav className="absolute left-0 h-20 w-full font-semibold">
+      <div className="container mx-auto flex h-full items-center justify-between">
+        <div>
+          <h1>Logo</h1>
+        </div>
+        <div>
+          <ul className="flex gap-8">
+            <Link href="/">Home</Link>
+            <Link href="/">Courses</Link>
+            <Link href="/">Contact</Link>
+          </ul>
+        </div>
       </div>
     </nav>
   );
