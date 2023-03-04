@@ -1,6 +1,6 @@
 import { Nav } from "@component/Nav";
-import "../../styles/tailwind.css";
-import "../globals.css";
+// import "../styles/tailwind.css";
+import "./globals.css";
 
 export default function RootLayout({
   children,
@@ -15,7 +15,7 @@ export default function RootLayout({
       */}
       <head />
 
-      <body>
+      <body className="px-2">
         <Nav />
         <div>{children}</div>
       </body>
