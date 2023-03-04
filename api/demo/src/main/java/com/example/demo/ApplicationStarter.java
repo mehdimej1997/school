@@ -11,11 +11,11 @@ import java.util.Objects;
 public class ApplicationStarter {
 
     public static void main(String[] args) {
-//        SpringApplication.run(ApplicationStarter.class, args);
-        var ob1 = new Contact("mehdi", "0669468694","test@test.com", "test", "test" );
-        var ob2 = new Contact("mehdi", "0669468694","test@test.co", "test", "test" );
-
-        System.out.println(Objects.equals(ob1, ob2));
+        SpringApplication.run(ApplicationStarter.class, args);
+//        var ob1 = new Contact("mehdi", "0669468694","test@test.com", "test", "test" );
+//        var ob2 = new Contact("mehdi", "0669468694","test@test.co", "test", "test" );
+//
+//        System.out.println(Objects.equals(ob1, ob2));
     }
 
 }
